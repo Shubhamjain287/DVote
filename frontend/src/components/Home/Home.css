@@ -1,0 +1,1203 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
+ */
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+section {
+  margin-bottom: 8vh;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #002D56;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 7vh;
+}
+
+#header-text {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  height: 80vh;
+}
+
+#logo {
+  position: absolute;
+  height: 15vh;
+  width: auto;
+  top: 20px;
+  left: 20px;
+}
+
+#voting-process {
+  position: absolute;
+  margin-top: 20px;
+  bottom: 0;
+  left: 0;
+}
+
+#voting-process-mobile {
+  display: none;
+}
+
+.section-title {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+}
+
+p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.rq-button {
+  background: #5DA4E5;
+  box-shadow: 0px 8px 8px rgba(0, 45, 86, 0.2);
+  width: 244px;
+  height: 69px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.rq-button:hover {
+  cursor: pointer;
+  background: #2186E2;
+}
+
+#why-zeus {
+  display: grid;
+  min-height: 140vh;
+  height: auto;
+  width: 100vw;
+  grid-template-rows: 40% 28% 28% 28%;
+  grid-template-columns: [start] 20% 30% 30% 20% [end];
+  grid-auto-flow: row;
+}
+
+.why-zeus-icon {
+  width: auto;
+}
+
+#why-zeus-title {
+  grid-row: 1;
+  grid-column: start/end;
+  justify-self: center;
+  align-self: center;
+}
+
+#transparency-text {
+  grid-row: 2;
+  grid-column: 2;
+  justify-self: start;
+  align-self: center;
+}
+
+#integrity-text {
+  grid-row: 3;
+  grid-column: 3;
+  justify-self: start;
+  align-self: center;
+  text-align: right;
+}
+
+#proven-text {
+  grid-row: 4;
+  grid-column: 2;
+  justify-self: start;
+  align-self: center;
+}
+
+#transparency-icon {
+  grid-row: 2;
+  grid-column: 3;
+  justify-self: end;
+  align-self: center;
+}
+
+#integrity-icon {
+  grid-row: 3;
+  grid-column: 2;
+  justify-self: start;
+  align-self: center;
+}
+
+#proven-icon {
+  grid-row: 4;
+  grid-column: 3;
+  justify-self: end;
+  align-self: center;
+}
+
+#integrity-row {
+  grid-row: 3;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background: #F6F6F6;
+}
+
+#go-online {
+  background-image: url('./img/blue-background.svg');
+  height: 90vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  color: white;
+  display: grid;
+  grid-template-columns: [start] 12% 38% 38% 12% [end];
+  grid-template-rows: auto;
+}
+#go-online h1 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 77px;
+  margin-bottom: 30px;
+}
+#go-online p {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+#go-online-text {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: center;
+  align-self: center;
+}
+
+#go-online-img {
+  grid-row: 1;
+  grid-column: 3;
+  justify-self: end;
+  align-self: end;
+  margin-bottom: -5px;
+}
+
+#video-section {
+  height: 38.75vw;
+  position: relative;
+}
+
+#lines {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#video {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 3px solid #002D56;
+  width: 60vw;
+  height: 33.75vw;
+}
+
+#trusted-section {
+  text-align: center;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-bottom: 3%;
+}
+
+#trusted-icons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-auto-flow: row;
+  padding-right: 5vw;
+  padding-left: 5vw;
+}
+
+#public-service-icon {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: center;
+  align-self: center;
+  width: auto;
+}
+
+#public-service-text {
+  grid-row: 2;
+  grid-column: 1;
+  justify-self: center;
+  align-self: start;
+  margin-top: 0;
+}
+
+#enterprises-icon {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: center;
+  align-self: center;
+  width: auto;
+}
+
+#enterprises-text {
+  grid-row: 2;
+  grid-column: 2;
+  justify-self: center;
+  align-self: start;
+  margin-top: 0;
+}
+
+#individuals-icon {
+  grid-row: 1;
+  grid-column: 3;
+  justify-self: center;
+  align-self: center;
+  width: auto;
+}
+
+#individuals-text {
+  grid-row: 2;
+  grid-column: 3;
+  justify-self: center;
+  align-self: start;
+  margin-top: 0;
+}
+
+#request-demo {
+  background-image: url('./img/grey-background.svg');
+  height: 95vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  margin-bottom: 0;
+  position: relative;
+  text-align: center;
+}
+
+#ballot-white {
+  bottom: -2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#form-background {
+  border: 3px solid #002D56;
+  background-color: white;
+  height: 60%;
+  width: 46%;
+  bottom: 13%;
+  position: absolute;
+  left: 27%;
+  z-index: 3;
+}
+
+label {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+}
+
+#request-form {
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+#request-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 9%;
+}
+
+footer {
+  background: #002D56;
+  height: 100px;
+  text-align: center;
+  padding-top: 40px;
+}
+footer p {
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media only screen and (min-width: 961px) and (max-height: 745px) {
+  .section-title {
+    font-weight: 550;
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  h3 {
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  h4 {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  header {
+    position: initial;
+    height: 100%;
+  }
+
+  #logo {
+    height: 80px;
+    top: 10px;
+    left: 10px;
+    margin-bottom: 10px;
+  }
+
+  #header-text {
+    height: auto;
+    margin-top: 140px;
+  }
+
+  #voting-process {
+    display: block;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #voting-process-mobile {
+    display: none;
+  }
+
+  .rq-button {
+    width: 166px;
+    height: 47px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  #why-zeus {
+    height: 160vh;
+    grid-template-rows: 10vh 50vh 50vh 50vh;
+    grid-template-columns: [start] 15% 35% 35% 15% [end];
+  }
+
+  .why-zeus-icon {
+    width: 80%;
+  }
+
+  #transparency-text {
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: start;
+    align-self: center;
+  }
+
+  #integrity-text {
+    grid-row: 3;
+    grid-column: 3;
+    justify-self: start;
+    align-self: center;
+    text-align: right;
+  }
+
+  #proven-text {
+    grid-row: 4;
+    grid-column: 2;
+    justify-self: start;
+    align-self: center;
+  }
+
+  #transparency-icon {
+    grid-row: 2;
+    grid-column: 3;
+    justify-self: end;
+    align-self: center;
+  }
+
+  #integrity-icon {
+    grid-row: 3;
+    grid-column: 2;
+    justify-self: start;
+    align-self: center;
+  }
+
+  #proven-icon {
+    grid-row: 4;
+    grid-column: 3;
+    justify-self: end;
+    align-self: center;
+  }
+
+  #go-online {
+    height: auto;
+    grid-template-columns: [start] 10% 80% 10% [end];
+  }
+
+  #go-online-text {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 0px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  #go-online-img {
+    display: none;
+  }
+
+  #request-demo {
+    height: auto;
+    position: initial;
+  }
+
+  #ballot-white {
+    display: none;
+  }
+
+  #form-background {
+    height: auto;
+    margin-left: 15%;
+    margin-top: 5%;
+    position: initial;
+    width: 70%;
+    margin-bottom: -4px;
+  }
+
+  label {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: left;
+  }
+
+  #request-form {
+    padding-top: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+  }
+
+  #form-button {
+    margin-bottom: 0px;
+  }
+
+  #request-title {
+    transform: none;
+    position: initial;
+    padding-top: 5%;
+  }
+}
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+  #why-zeus {
+    grid-template-columns: [start] 10% 40% 40% 10% [end];
+  }
+
+  #request-demo {
+    height: auto;
+    position: initial;
+  }
+
+  #ballot-white {
+    display: none;
+  }
+
+  #form-background {
+    height: auto;
+    margin-left: 15%;
+    margin-top: 5%;
+    position: initial;
+    width: 70%;
+    margin-bottom: -4px;
+  }
+
+  label {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: left;
+  }
+
+  #request-form {
+    padding-top: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+  }
+
+  #form-button {
+    margin-bottom: 0px;
+  }
+
+  #request-title {
+    transform: none;
+    position: initial;
+    padding-top: 5%;
+  }
+}
+@media only screen and (max-width: 960px) and (orientation: landscape) {
+  .section-title {
+    font-weight: 550;
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  h3 {
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  h4 {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  header {
+    position: initial;
+    height: 100%;
+  }
+
+  #logo {
+    height: 80px;
+    top: 10px;
+    left: 10px;
+    margin-bottom: 10px;
+  }
+
+  #header-text {
+    height: auto;
+    margin-top: 140px;
+  }
+
+  #voting-process {
+    display: block;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #voting-process-mobile {
+    display: none;
+  }
+
+  .rq-button {
+    width: 166px;
+    height: 47px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  #why-zeus {
+    height: 190vh;
+    grid-template-rows: 10vh 60vh 60vh 60vh;
+    grid-template-columns: [start] 5% 45% 45% 5% [end];
+  }
+
+  .why-zeus-icon {
+    width: 80%;
+  }
+
+  #go-online {
+    height: auto;
+    grid-template-columns: [start] 10% 80% 10% [end];
+  }
+
+  #go-online-text {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 0px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  #go-online-img {
+    display: none;
+  }
+
+  #request-demo {
+    height: auto;
+    position: initial;
+  }
+
+  #ballot-white {
+    display: none;
+  }
+
+  #form-background {
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+    position: initial;
+    width: 90%;
+    margin-bottom: -4px;
+  }
+
+  label {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: left;
+  }
+
+  #request-form {
+    padding-top: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+  }
+
+  #form-button {
+    margin-bottom: 0px;
+  }
+
+  #request-title {
+    transform: none;
+    position: initial;
+    padding-top: 5%;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 920px) and (orientation: portrait) {
+  .section-title {
+    font-weight: 550;
+    font-size: 40px;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-weight: normal;
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  #logo {
+    height: 10vh;
+    width: auto;
+    top: 5vh;
+    left: 5vw;
+  }
+
+  #voting-process {
+    display: block;
+    bottom: 15vh;
+  }
+
+  #voting-process-mobile {
+    display: none;
+  }
+
+  section {
+    margin-bottom: 4vh;
+  }
+
+  #why-zeus {
+    height: 110vh;
+    grid-template-rows: 5vh 35vh 35vh 35vh;
+    grid-template-columns: [start] 10vw 40vw 40vw 10vw [end];
+  }
+
+  .why-zeus-icon {
+    width: 35vw;
+  }
+
+  #transparency-icon {
+    grid-row: 2;
+    grid-column: 3;
+    justify-self: end;
+    align-self: center;
+  }
+
+  #integrity-icon {
+    grid-row: 3;
+    grid-column: 2;
+    justify-self: start;
+    align-self: center;
+  }
+
+  #proven-icon {
+    grid-row: 4;
+    grid-column: 3;
+    justify-self: stretch;
+    align-self: center;
+  }
+
+  #go-online {
+    height: auto;
+    grid-template-columns: [start] 10% 80% 10% [end];
+  }
+  #go-online p {
+    font-weight: 400;
+  }
+
+  #go-online-text {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 0px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  #go-online-img {
+    display: none;
+  }
+
+  #video-section {
+    height: 55.625vw;
+  }
+
+  #lines {
+    width: 200%;
+  }
+
+  #video {
+    width: 90vw;
+    height: 50.625vw;
+  }
+
+  #request-demo {
+    height: auto;
+    position: initial;
+  }
+
+  #ballot-white {
+    display: none;
+  }
+
+  #form-background {
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+    position: initial;
+    width: 90%;
+    margin-bottom: -4px;
+  }
+
+  label {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: left;
+  }
+
+  #request-form {
+    padding-top: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+  }
+
+  #form-button {
+    margin-bottom: 0px;
+  }
+
+  #request-title {
+    transform: none;
+    position: initial;
+    padding-top: 5%;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .section-title {
+    font-weight: 550;
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  h3 {
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  h4 {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  #logo {
+    position: absolute;
+    height: 10vh;
+    width: auto;
+    top: 10px;
+    left: 10px;
+  }
+
+  #header-text {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    height: 90vh;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    text-align: center;
+  }
+  #header-text p {
+    font-size: 20px;
+    padding-right: 6vh;
+    padding-left: 6vh;
+    padding-top: 1vh;
+  }
+
+  .rq-button {
+    width: 166px;
+    height: 47px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  #voting-process {
+    display: none;
+  }
+
+  #voting-process-mobile {
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    bottom: -20px;
+    left: 0;
+  }
+
+  section {
+    margin-bottom: 2vh;
+  }
+
+  #why-zeus {
+    display: grid;
+    height: 172vh;
+    width: 100vw;
+    grid-template-rows: 10vh 27vh 27vh 27vh 27vh 27vh 27vh;
+    grid-template-columns: [start] 5% 90% 5% [end];
+    grid-auto-flow: row;
+  }
+  #why-zeus p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .why-zeus-icon {
+    width: 75%;
+  }
+
+  #why-zeus-title {
+    grid-row: 1;
+    grid-column: start/end;
+    justify-self: center;
+    align-self: end;
+    margin-top: 1vh;
+  }
+
+  #transparency-text {
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: start;
+    align-self: end;
+  }
+
+  #integrity-text {
+    grid-row: 4;
+    grid-column: 2;
+    justify-self: start;
+    align-self: end;
+    text-align: left;
+  }
+
+  #proven-text {
+    grid-row: 6;
+    grid-column: 2;
+    justify-self: start;
+    align-self: end;
+  }
+
+  #transparency-icon {
+    grid-row: 3;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  #integrity-icon {
+    grid-row: 5;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  #proven-icon {
+    grid-row: 7;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  #integrity-row {
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background: #F6F6F6;
+  }
+
+  #go-online {
+    display: grid;
+    grid-template-columns: [start] 10% 80% 10% [end];
+    grid-template-rows: auto;
+  }
+  #go-online h1 {
+    font-weight: 550;
+    font-size: 36px;
+    line-height: 34px;
+  }
+  #go-online p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+
+  #go-online-text {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-bottom: 0px;
+  }
+
+  #go-online-img {
+    display: none;
+  }
+
+  #video-section {
+    height: 75.625vw;
+  }
+
+  #trusted-section {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 3%;
+  }
+  #trusted-section p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #trusted-icons {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-auto-flow: row;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #public-service-icon {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    height: 8vh;
+  }
+
+  #public-service-text {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 4vh;
+  }
+
+  #enterprises-icon {
+    grid-row: 3;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    height: 8vh;
+  }
+
+  #enterprises-text {
+    grid-row: 4;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 4vh;
+  }
+
+  #individuals-icon {
+    grid-row: 5;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    height: 8vh;
+  }
+
+  #individuals-text {
+    grid-row: 6;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 4vh;
+  }
+
+  #request-demo {
+    height: auto;
+    position: initial;
+  }
+
+  #ballot-white {
+    display: none;
+  }
+
+  #form-background {
+    height: auto;
+    margin-left: 5%;
+    margin-top: 10%;
+    position: initial;
+    width: 90%;
+    margin-bottom: -2px;
+  }
+
+  label {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: left;
+  }
+
+  #request-form {
+    padding-top: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+  }
+
+  #form-button {
+    margin-bottom: 0px;
+  }
+
+  #request-title {
+    transform: none;
+    position: initial;
+    padding-top: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: 26px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
