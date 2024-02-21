@@ -10,7 +10,7 @@ import Offline from './components/404ErrorPage/Offline';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const online = navigator.onLine;
+const online = !navigator.onLine;
 
 root.render(
   <React.StrictMode>

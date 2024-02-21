@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
+import HOC from '../utils/HOC';
 
 const ProtectedRoute = ({Component}) => {
   
@@ -16,7 +17,7 @@ const ProtectedRoute = ({Component}) => {
   
 
   return user ? (
-    <Component />
+    <HOC Children={Component} />
   ) : <Navigate to={"/login"} />
 }
 

@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import Loading from "../../utils/Loading";
 
 const Offline = () => {
+
+  const [retry, setRetry] = useState(false);
+
+  const handleRetry = () => {
+    setRetry(true);
+    setTimeout(() => setRetry(false), 5000);
+  }
+
   return (
+    <>{ retry ? <Loading /> :
     <div class="bg-black text-white">
       <div class="flex h-screen">
         <div class="m-auto text-center">
@@ -144,14 +154,15 @@ const Offline = () => {
             You aren't connected to a working internet connection
           </p>
           <button
-            onClick={() => window.location.reload()}
+            onClick={handleRetry}
             class="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
           >
             Retry
           </button>
         </div>
       </div>
-    </div>
+    </div>}
+    </>
   );
 };
 

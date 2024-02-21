@@ -14,6 +14,7 @@ import EditProfile from "./components/EditProfile";
 import Home from "./components/Home/Home";
 import CreateVoting from "./components/Voting/CreateVoting";
 import Voting from "./components/Voting/Voting";
+import HOC from "./utils/HOC";
 
 function App() {
 
@@ -22,13 +23,12 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="/" element={<HOC Children={Home} />} />
+          <Route path="/login" element={<HOC Children={Login} />} />
+          <Route path="/about" element={<HOC Children={About} />} />
+          <Route path="/contact" element={<HOC Children={Contact} />} />
+          <Route path="/forgot-password" element={<HOC Children={ForgotPassword} />} />
+          <Route path="/reset-password" element={<HOC Children={ResetPassword} />} />
           <Route
             path="/profile"
             element={<ProtectedRoute Component={Profile} />}
